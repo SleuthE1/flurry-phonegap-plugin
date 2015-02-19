@@ -2,7 +2,7 @@
 <plugin
 	xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
-	id="com.phonegap.plugins.Flurry"
+	id="com.flurry.plugins.Flurry"
 	version="3.3.6">
 	<name>Flurry</name>
 	<description>Cordova/Phonegap plugin for Flurry mobile analytics</description>
@@ -35,10 +35,11 @@
 	<platform name="android">
 		<config-file target="res/xml/config.xml" parent="/*">
 			<feature name="FlurryPlugin">
-				<param name="android-package" value="com.phonegap.plugins.Flurry" />
+				<param name="android-package" value="com.flurry.plugins.Flurry" />
 			</feature>
 		</config-file>
-
+		<source-file src="src/android/FlurryAnalytics-5.3.0.jar" target-dir="libs" framework="true" />
+        
 		<source-file src="src/android/Flurry.java"
 					target-dir="src/com/phonegap/plugins/flurry/" />
 		<dependency id="com.google.playservices" />
