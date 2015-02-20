@@ -30,14 +30,6 @@ public class Flurry extends CordovaPlugin {
         return params;
     }
     
-     @Override
-     public void onCreate() {
-        super.onCreate();
-        // init Flurry
-        FlurryAgent.init(this, "S9CGZ2SCHTCDWPSJ86TX");
-        //....
-    } 
-
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         try{
@@ -46,6 +38,8 @@ public class Flurry extends CordovaPlugin {
                 FlurryAgent.onStartSession(cordova.getActivity().getApplicationContext(), args.getString(0));
             } else if(action.equals("endSession")) {
                 FlurryAgent.onEndSession(cordova.getActivity().getApplicationContext());
+            } else if(action.equals("init")) {
+                FlurryAgent.init(cordova.getActivity().getApplicationContext(), args.getString(0));
             } else if(action.equals("setSessionContinueSeconds")) {
                 FlurryAgent.setContinueSessionMillis(args.getLong(0));
             } else if(action.equals("setAppVersion")) {
