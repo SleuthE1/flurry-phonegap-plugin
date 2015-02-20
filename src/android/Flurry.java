@@ -30,6 +30,14 @@ public class Flurry extends CordovaPlugin {
         return params;
     }
     
+     @Override
+     public void onCreate() {
+        super.onCreate();
+        // init Flurry
+        FlurryAgent.init(this, 'S9CGZ2SCHTCDWPSJ86TX');
+        //....
+    } 
+
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         try{
