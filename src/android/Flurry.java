@@ -34,7 +34,7 @@ public class Flurry extends CordovaPlugin {
      public void onCreate() {
         super.onCreate();
         // init Flurry
-        FlurryAgent.init(this, 'S9CGZ2SCHTCDWPSJ86TX');
+        FlurryAgent.init(this, "S9CGZ2SCHTCDWPSJ86TX");
         //....
     } 
 

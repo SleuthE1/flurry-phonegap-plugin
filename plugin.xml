@@ -3,7 +3,7 @@
 	xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="com.flurry.plugins.Flurry"
-	version="3.3.8">
+	version="3.3.9">
 	<name>Flurry</name>
 	<description>Cordova/Phonegap plugin for Flurry mobile analytics</description>
 	<license>Apache 2.0</license>
