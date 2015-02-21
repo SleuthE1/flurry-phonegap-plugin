@@ -66,6 +66,10 @@
     return cordova.exec(successCallback, failureCallback, 'FlurryPlugin', 'init', [key]);
   };
 
+  Flurry.prototype.getAgentVersion = function(successCallback,failureCallback) {
+    return cordova.exec(successCallback, failureCallback, 'FlurryPlugin', 'getAgentVersion', []);
+  };
+
   Flurry.prototype.endSession = function(successCallback,failureCallback) {
     return cordova.exec(successCallback, failureCallback, 'FlurryPlugin', 'endSession', []);
   };
