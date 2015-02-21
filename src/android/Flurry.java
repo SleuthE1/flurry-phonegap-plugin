@@ -45,7 +45,7 @@ public class Flurry extends CordovaPlugin {
             } else if(action.equals("setAppVersion")) {
                 FlurryAgent.setVersionName(args.getString(0));
             } else if(action.equals("getAgentVersion")) {
-                return FlurryAgent.getAgentVersion();
+                return String.valueOf(FlurryAgent.getAgentVersion());
             } else if(action.equals("setUserID")) {
                 FlurryAgent.setUserId(args.getString(0));
             } else if(action.equals("setGender")) {
