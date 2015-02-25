@@ -3,7 +3,7 @@
 	xmlns="http://apache.org/cordova/ns/plugins/1.0"
 	xmlns:android="http://schemas.android.com/apk/res/android"
 	id="com.flurry.plugins.Flurry"
-	version="3.4.8">
+	version="3.4.9">
 	<name>Flurry</name>
 	<description>Cordova/Phonegap plugin for Flurry mobile analytics</description>
 	<license>Apache 2.0</license>
@@ -40,7 +40,7 @@
 		</config-file>
 		<source-file src="src/android/FlurryAnalytics-5.3.0.jar" target-dir="libs" framework="true" />
         
-		<source-file src="src/android/Flurry.java"	target-dir="src/com/phonegap/plugins/flurry/" />
+		<source-file src="src/android/Flurry.java"	target-dir="src/com/flurry/plugins/flurry" />
 		<dependency id="com.google.playservices" />
 		<dependency id="android.support.v4" />
 		<config-file target="AndroidManifest.xml" parent="/*/application">
